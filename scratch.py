@@ -6,7 +6,22 @@ def intersection(array1, array2, array3):
 
     hash_map = defaultdict(list)
 
-    for element in array_set:
+    # hash map with array_set elements as key
+
+    # Each value is an int list .
+    # Example : hash_map : {
+    #                       0: [0 ,1 ,1]
+    #                       1 : [2, 1, 1]
+    #                       5 :[ 1,1,1]
+    #                       }
+
+    # Each item in that  value list, represents the  element frequency in the array
+    #   hash_map[element][0] = frequency of element in array 1
+    #   hash_map[element][1] = frequency of element in array 2
+    #   hash_map[element][2] = frequency of element in array 3
+
+
+    for element in array_set: # value init [ 0, 0, 0]
         hash_map[element] = [0] * 3
 
     for element in array1:
