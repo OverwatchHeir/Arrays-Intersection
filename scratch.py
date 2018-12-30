@@ -20,6 +20,7 @@ def intersection(array1, array2, array3):
     #   hash_map[element][1] = frequency of element in array 2
     #   hash_map[element][2] = frequency of element in array 3
 
+    # When value is > [1,1,1] , that element will be in the intersection
 
     for element in array_set: # value init [ 0, 0, 0]
         hash_map[element] = [0] * 3
